@@ -1,0 +1,7 @@
+{
+  "name": "software-modeling-and-implementation-practice",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
