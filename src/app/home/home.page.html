@@ -8,16 +8,16 @@
 
 <ion-content [fullscreen]="true">
     <ion-fab vertical="top" horizontal="end" edge slot="fixed">
-        <ion-fab-button>
+        <ion-fab-button (click)="onCalculate()" [disabled]="!isFormValid()">
             <ion-icon icon="calculator"></ion-icon>
         </ion-fab-button>
     </ion-fab>
     <ion-item>
         <ion-label position="floating">Peso (kg)</ion-label>
-        <ion-input type="number"></ion-input>
+        <ion-input type="number" [(ngModel)]="this.weight"></ion-input>
     </ion-item>
     <ion-item>
         <ion-label position="floating">Altura (m)</ion-label>
-        <ion-input type="number"></ion-input>
+        <ion-input type="number" [(ngModel)]="this.height"></ion-input>
     </ion-item>
 </ion-content>
